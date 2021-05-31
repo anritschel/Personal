@@ -23,16 +23,15 @@ def sendMeals(meals):
 
     mealTable = """<table><tr><td> Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</td></tr><tr>"""
     groceryTable = """<p> Here are the groceries needed:</p>"""
+    
     for meal in meals:
         mealTable += "<td>" + str(meal) + "</td>"
         groceryTable += "<P>" + str(ingredientLists[meal]) + "</P>"
-    mealTable += "</tr></table>"
-
     
-    for meal in meals:
-        
-
+    
+    mealTable += "</tr></table>"        
     emailBody += mealTable + groceryTable +  "</body></html>"
+
     message = EmailMessage()
     message['Subject'] = "Weekly Meals & Grocery List"
     message['From'] = ""
