@@ -19,19 +19,29 @@ Project ToDo
 SQL Tables
 
 User
-____________________________________________________________________
-ID                |Name   |Email  |MealList                        |
-int auto increment|varchar|varchar|int(linked to MealList Table ID)|
+____________________________________________________________________________
+ID                |Name       |Email      |MealList                        |
+int auto increment|varchar(50)|varchar(50)|int(linked to MealList Table ID)|
 
 MealList
-____________________________________________
-ID                |MealName|Ingredient List|
-int auto increment|varchar |varchar        |
+_______________________________________________________
+ID                |MealName    |Ingredient List       |
+int auto increment|varchar(50) |varchar(20000)        |
 
 Ingredients
-_________________________________________________
-ID                |IngredientName|IngredientType|
-int auto increment|varchar       |varchar       |
+_________________________________________________________
+ID                |IngredientName    |IngredientType    |
+int auto increment|varchar(50)       |varchar(50)       |
+
+
+Ingredient types:
+Fresh Produce
+Frozen Produce
+Fresh Meat
+Frozen Meat
+Dairy
+Dry
+Baked Goods
 """
 
 
