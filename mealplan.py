@@ -3,6 +3,39 @@ import smtplib
 from email.message import EmailMessage
 
 
+"""
+Project ToDo
+1) modify to use RDB for users
+    MySQL
+2) add logic to tally ingredients
+3) add logic to sort ingredients by type
+
+
+
+
+
+
+
+SQL Tables
+
+User
+____________________________________________________________________
+ID                |Name   |Email  |MealList                        |
+int auto increment|varchar|varchar|int(linked to MealList Table ID)|
+
+MealList
+____________________________________________
+ID                |MealName|Ingredient List|
+int auto increment|varchar |varchar        |
+
+Ingredients
+_________________________________________________
+ID                |IngredientName|IngredientType|
+int auto increment|varchar       |varchar       |
+"""
+
+
+
 def sendMeals(meals,sides):
     emailBody = """<html>
                                 <head>
@@ -169,18 +202,3 @@ sendMeals(mealPlan,sidePlan)
 
 
 
-#todo add sides
-
-
-
-
-"""
-we need a new hash map containing either a side, or number of sides
-
-new randomizer function that takes an input if it is a string it gets the ingredients and appends them tot he meal list, if it is an interger it randomly selects meales X times
-
-New hash map containing "side" : "ingredients" 
-
-
-
-"""
