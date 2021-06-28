@@ -82,8 +82,8 @@ def sendMeals(meals,sides):
     emailBody += mealTable + sideTable + groceryTable +  "</body></html>"
     message = EmailMessage()
     message['Subject'] = "Weekly Meals & Grocery List"
-    message['From'] = "Andrew.ritschel@gmail.com"
-    message['To'] = "andrew.ritschel@gmail.com", "ashleeamcintire@yahoo.com"
+    message['From'] = ""
+    message['To'] = ""
     message.set_content('data')
     message.add_alternative(emailBody, subtype='html')
 
