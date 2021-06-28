@@ -24,14 +24,19 @@ ID                |Name       |Email      |MealList                        |
 int auto increment|varchar(50)|varchar(50)|int(linked to MealList Table ID)|
 
 MealList
-_______________________________________________________
-ID                |MealName    |Ingredient List       |
-int auto increment|varchar(50) |varchar(20000)        |
+___________________________________________________________________
+ID                |MealName    |Ingredient List       | Sidecount |
+int auto increment|varchar(50) |varchar(20000)        | int       |
 
 Ingredients
 _________________________________________________________
-ID                |IngredientName    |IngredientType    |
+ID                |IngredientName    |IngredientType    | 
 int auto increment|varchar(50)       |varchar(50)       |
+
+SideList
+_______________________________________________________
+ID                |MealName    |Ingredient List       |
+int auto increment|varchar(50) |varchar(20000)        |
 
 
 Ingredient types:
