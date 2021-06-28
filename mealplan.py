@@ -9,11 +9,9 @@ Project ToDo
     MySQL
 2) add logic to tally ingredients
 3) add logic to sort ingredients by type
-
-
-
-
-
+4) Meal History
+5) Web Frontend?
+6) Price Calculator(source from which vendor?)
 
 
 SQL Tables
@@ -35,7 +33,7 @@ int auto increment|varchar(50)       |varchar(50)       |
 
 SideList
 _______________________________________________________
-ID                |MealName    |Ingredient List       |
+ID                |SideName    |Ingredient List       |
 int auto increment|varchar(50) |varchar(20000)        |
 
 
@@ -97,7 +95,7 @@ def sendMeals(meals,sides):
         smtp.ehlo()
         smtp.starttls()
         smtp.ehlo()
-        smtp.login('Andrew.Ritschel@gmail.com', 'Th3s0r00!')
+        smtp.login('')
         smtp.send_message(message)
     
     return 0
